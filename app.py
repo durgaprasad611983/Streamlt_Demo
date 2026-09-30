@@ -8,9 +8,10 @@ Original file is located at
 """
 
 import streamlit as st
-st.title("Salary Prediction")
-experience = st.number_input("Years of Experience")
 
-if st.button("Prediction"):
-  salary = experience*10000
-  st.success(f"Predicted Salary: {salary}")
+st.title("My First Streamlit Application with text input")
+
+name = st.text_input("Enter your name")
+
+if st.button("Submit"):
+	st.success(f"Welcome {name}")
